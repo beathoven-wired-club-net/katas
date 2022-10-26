@@ -16,6 +16,8 @@ public class FizzBuzz {
 	final boolean[] buzz = new boolean[N + 1];
 
 	public FizzBuzz() {
+		original();
+		alternative();
 	}
 
 	public void original() {
