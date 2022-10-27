@@ -31,6 +31,10 @@ public class FizzBuzz {
 	protected boolean[] fizz;
 	protected boolean[] buzz;
 
+	public static void main(String[] args) {
+		new FizzBuzz().run();
+	}
+
 	public FizzBuzz() {
 		fizz = new boolean[N + 1];
 		buzz = new boolean[N + 1];

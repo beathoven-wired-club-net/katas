@@ -2,6 +2,10 @@ package wiredclub.net.katas.function.fizzbuzz;
 
 public class FizzBuzzAlternative extends FizzBuzz {
 
+	public static void main(String[] args) {
+		new FizzBuzzAlternative().run();
+	}
+
 	public FizzBuzzAlternative() {
 		fizz = new boolean[N + 1];
 		buzz = new boolean[N + 1];
