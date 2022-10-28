@@ -18,7 +18,7 @@ class RussianPawnMultiplicationTest {
 		for (int x = 0; x <= 10; x++) {
 			for (int y = 0; y <= 10; y++) {
 				int actual = rpw.mul(x, y);
-				LOG.debug("x: {} | y: {} | sum: {}", x, y, actual);
+				LOG.debug("x: {} | y: {} | mul: {}", x, y, actual);
 				assertEquals(x * y, actual);
 			}
 		}
