@@ -69,17 +69,13 @@ public class Rot13 {
 	}
 
 	String transform(String textToTransform) {
-		StringBuilder output = new StringBuilder();
+		StringBuilder out = new StringBuilder();
 
 		char[] input = textToTransform.toCharArray();
 		for (char c : input) {
-			if (TRANSFORM.containsKey(c)) {
-				output.append(TRANSFORM.get(c));
-			} else {
-				output.append(c);
-			}
+			out.append(TRANSFORM.containsKey(c) ? TRANSFORM.get(c) : c);
 		}
 
-		return output.toString();
+		return out.toString();
 	}
 }
